@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { AmqpConnection } from '@golevelup/nestjs-rabbitmq';
 import { LoggerService } from '@app/logger/services/logger.service';
+import { AmqpConnection } from '@golevelup/nestjs-rabbitmq';
 
 import { ExchangeRabbit } from '../enums/exchange-rabbit';
 

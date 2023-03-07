@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { RabbitMQModule } from '@golevelup/nestjs-rabbitmq';
 import { LoggerModule } from '@app/logger/logger.module';
+import { RabbitMQModule } from '@golevelup/nestjs-rabbitmq';
 
 import { rabbitConfig } from './config/rabbit.config';
+import { RabbitListener } from './listeners/rabbit.listener';
 import { ConsumerService } from './services/consumer.service';
 import { ProducerService } from './services/producer.service';
-import { RabbitListener } from './listeners/rabbit.listener';
 
 @Module({
   imports: [

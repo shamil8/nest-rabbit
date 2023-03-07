@@ -1,6 +1,6 @@
-import { RabbitSubscribe } from '@golevelup/nestjs-rabbitmq';
 import { Injectable } from '@nestjs/common';
 import { LoggerService } from '@app/logger/services/logger.service';
+import { RabbitSubscribe } from '@golevelup/nestjs-rabbitmq';
 
 import { ExchangeRabbit } from '../enums/exchange-rabbit';
 import { QueueRabbit } from '../enums/queue-rabbit';

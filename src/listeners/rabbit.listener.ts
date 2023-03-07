@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-
 import config from 'src/config';
-import { ProducerService } from '../services/producer.service';
-import { QueueRabbit } from '../enums/queue-rabbit';
+
 import { ExchangeRabbit } from '../enums/exchange-rabbit';
+import { QueueRabbit } from '../enums/queue-rabbit';
+import { ProducerService } from '../services/producer.service';
 
 @Injectable()
 export class RabbitListener {
