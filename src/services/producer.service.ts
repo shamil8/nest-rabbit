@@ -14,7 +14,7 @@ export class ProducerService {
     queue: string,
     request: T,
     exchange = ExchangeRabbit.appDirect,
-  ): Promise<void> {
+  ): Promise<boolean> {
     return this.amqpConnection.publish(exchange, queue, request);
   }
 }

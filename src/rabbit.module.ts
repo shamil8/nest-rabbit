@@ -27,6 +27,5 @@ import { ProducerService } from './services/producer.service';
     RabbitListener,
   ],
   exports: [ProducerService],
-  // controllers: [],
 })
 export class RabbitModule {}
